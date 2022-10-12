@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-color: #f5f6f9;
+}
+
+h1 {
+    @apply text-4xl;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.draft-toolbar {
+    @apply flex absolute border p-2 rounded bg-white shadow -bottom-12;
+    div {
+        @apply flex;
+    }
+    button {
+        @apply px-1 mx-1 text-base font-semibold rounded;
+        &.akzb7t5 {
+            @apply bg-gray-200;
+        }
+    }
+}
+
+.builder-item {
+    @apply relative;
+    .actions {
+        @apply bg-white shadow w-24 p-2 rounded absolute right-0 hidden;
+    }
+    &:hover {
+        .actions {
+            @apply flex;
+        }
+    }
+}
